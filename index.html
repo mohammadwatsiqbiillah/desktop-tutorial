@@ -1,0 +1,789 @@
+<!-- portofolio -->
+<doctype html>
+    <html lang="id" data-theme="light">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portofilio</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+
+
+    <!-- =========================================
+        LOADING SCREEN
+    ========================================= -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- =========================================
+        SCROLL PROGRESS BAR
+    ========================================= -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- =========================================
+        NAVBAR
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fa-solid fa-code"></i>
+                <span>Abil.dev</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#portfolio" class="nav-link">Proyek</a></li>
+                <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-btn">Hubungi Saya</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================
+        HERO SECTION
+    ========================================= -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb"></div>
+            <div class="gradient-orb"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-circle"></i>
+                    Tersedia untuk Proyek Baru
+                </div>
+                <h1 class="hero-title">
+                    Halo, Saya <span class="highlight">Mohammad Watsiq Billah</span><br>
+                    Web Developer
+                </h1>
+                <div class="hero-typing">
+                    Saya seorang <span class="typed-text" id="typedText"></span><span class="cursor"></span>
+                </div>
+                <p class="hero-description">
+                    Mengubah ide kreatif menjadi pengalaman digital yang memukau melalui kode yang bersih dan desain yang elegan. Mari berkolaborasi untuk mewujudkan proyek impian Anda.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fa-solid fa-eye"></i>
+                        Lihat Proyek
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Hubungi Saya
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <!-- <span class="stat-number counter" data-target="50">0</span>
+                        <span class="stat-label">Proyek Selesai</span> -->
+                    </div>
+                    <div class="stat-item">
+                        <!-- <span class="stat-number counter" data-target="30">0</span>
+                        <span class="stat-label">Klien Puas</span> -->
+                    </div>
+                    <div class="stat-item">
+                        <!-- <span class="stat-number counter" data-target="5">0</span>
+                        <span class="stat-label">Tahun Pengalaman</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="hero-avatar">
+                        <!-- <img src="img.jpg" alt="images"> -->
+                        <img src="gambar2.png" alt="gambar">
+                    </div>
+                    <div class="floating-card">
+                        <div class="floating-card-icon" style="background: #DBEAFE; color: #2563EB;">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            React.js
+                            <span>Frontend</span>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="floating-card-icon" style="background: #DCFCE7; color: #16A34A;">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            Node.js
+                            <span>Backend</span>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="floating-card-icon" style="background: #FEF3C7; color: #D97706;">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            UI/UX Design
+                            <span>Creative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        ABOUT SECTION
+    ========================================= -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Tentang Saya</span>
+                <h2 class="section-title">Kenali Lebih Dekat</h2>
+                <p class="section-description">Pengembang web berdedikasi dengan passion dalam menciptakan solusi digital yang berdampak.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <img src="img.jpg" alt="Profile Image">
+                        </div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="number">2+</span>
+                        <span class="text">Tahun<br>Pengalaman</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3>Developer Profesional dengan Semangat Inovasi</h3>
+                    <p>
+                        Saya adalah seorang Full-Stack Developer dengan pengalaman lebih dari 5 tahun dalam membangun aplikasi web modern. Saya percaya bahwa kode yang baik adalah seni, dan setiap proyek adalah kesempatan untuk menciptakan sesuatu yang luar biasa.
+                    </p>
+                    <p>
+                        Dengan keahlian di bidang frontend dan backend, saya membantu bisnis dan individu mewujudkan visi digital mereka dari konsep hingga peluncuran. Saya selalu mengutamakan performa, aksesibilitas, dan pengalaman pengguna dalam setiap proyek.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <div><span class="label">Nama:</span><span class="value"> Mohammad Watsiq Billah</span></div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div><span class="label">Email:</span><span class="value"> mohammadwatsiqbillah@gmail.com</span></div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div><span class="label">Lokasi:</span><span class="value"> Situbondo, Indonesia</span></div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div><span class="label">Pendidikan:</span><span class="value"> S1 Teknik Informatika</span></div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        SKILLS SECTION
+    ========================================= -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Keahlian</span>
+                <h2 class="section-title">Teknologi yang Saya Kuasai</h2>
+                <p class="section-description">Kumpulan teknologi dan alat yang saya gunakan untuk membangun solusi digital yang berkualitas tinggi.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js & Next.js</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3><i class="fa-solid fa-server"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js & Express</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="87"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python & Django</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PostgreSQL & MongoDB</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">REST API & GraphQL</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3><i class="fa-solid fa-paintbrush"></i> UI/UX Design & Lainnya</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma & Adobe XD</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Docker & AWS</span>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        SERVICES SECTION
+    ========================================= -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Layanan</span>
+                <h2 class="section-title">Apa yang Saya Tawarkan</h2>
+                <p class="section-description">Solusi digital lengkap untuk membantu bisnis Anda berkembang di era digital.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Membangun website modern dan responsif menggunakan teknologi terkini dengan performa tinggi dan SEO-friendly.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Pengembangan aplikasi mobile cross-platform yang cepat, ringan, dan memberikan pengalaman pengguna terbaik.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Desain antarmuka yang intuitif dan menarik dengan fokus pada user experience dan konversi bisnis.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Implementasi infrastruktur cloud dan CI/CD pipeline untuk deployment yang efisien dan skalabel.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Arsitektur backend yang robust, aman, dan mampu menangani traffic tinggi dengan response time cepat.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Konsultasi IT</h3>
+                    <p>Strategi teknologi dan konsultasi arsitektur sistem untuk membantu bisnis Anda mencapai tujuan digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        PORTFOLIO SECTION
+    ========================================= -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Proyek</span>
+                <h2 class="section-title">Karya Terbaru Saya</h2>
+                <p class="section-description">Kumpulan proyek yang telah saya kerjakan dengan penuh dedikasi dan keahlian.</p>
+            </div>
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card reveal" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Web App</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform belanja online dengan fitur lengkap dan pengalaman pengguna yang optimal.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal" data-category="mobile">
+                    <div class="portfolio-image">
+                        <i class="fa-solid fa-heart-pulse"></i>                        
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>dasbord Tracker App</h3>
+                        <p>website dasbor dengan fitur yang sudah di kembangkan dengan sangat responsif.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span>
+                            <span>JAVA SCRIPT</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal" data-category="design">
+                    <div class="portfolio-image">
+                        <!-- <i class="fa-solid fa-credit-card"></i> -->
+                        <img src="gambar.png" alt="Fintech Dashboard">
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">UI/UX Design</span>
+                        <h3>Fintech Dashboard</h3>
+                        <p>Desain dashboard keuangan dengan visualisasi data interaktif dan intuitif.</p>
+                        <div class="portfolio-tech">
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                            <span>Design System</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal" data-category="web">
+                    <div class="portfolio-image">
+                        <!-- <i class="fa-solid fa-graduation-cap"></i> -->
+                        <img src="gambar1.png" alt="Form Login">
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Web App</span>
+                        <h3>Form Login</h3>
+                        <p>fomr login yang sudah saya buat dengan menggunakan kode yang rapi.</p>
+                        <div class="portfolio-tech">
+                            <span>Next.js</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal" data-category="mobile">
+                    <div class="portfolio-image">
+                        <i class="fa-solid fa-utensils"></i>
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>Food Delivery App</h3>
+                        <p>Aplikasi pesan antar makanan dengan tracking real-time dan payment gateway.</p>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal" data-category="design">
+                    <div class="portfolio-image">
+                        <i class="fa-solid fa-building"></i>
+                        <div class="portfolio-overlay">
+                            <a href="#" title="Lihat Detail"><i class="fa-solid fa-eye"></i></a>
+                            <a href="#" title="Kunjungi Website"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">UI/UX Design</span>
+                        <h3>Corporate Website</h3>
+                        <p>Redesign website korporat dengan tampilan profesional dan navigasi yang lebih baik.</p>
+                        <div class="portfolio-tech">
+                            <span>Adobe XD</span>
+                            <span>Illustrator</span>
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        EXPERIENCE SECTION
+    ========================================= -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Pengalaman</span>
+                <h2 class="section-title">Perjalanan Karir Saya</h2>
+                <p class="section-description">Pengalaman kerja profesional yang membentuk keahlian dan perspektif saya.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Sekarang</span>
+                        <h3>Senior Frontend Developer</h3>
+                        <h4>PT. Teknologi Nusantara</h4>
+                        <p>Memimpin tim frontend dalam pengembangan aplikasi SaaS enterprise. Meningkatkan performa website 40% dan mengimplementasikan design system.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3>Full-Stack Developer</h3>
+                        <h4>Startup Digital Kreatif</h4>
+                        <p>Mengembangkan dan memelihara beberapa aplikasi web dari konsep hingga deployment. Berkolaborasi dengan tim produk dan desain.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2020</span>
+                        <h3>Junior Web Developer</h3>
+                        <h4>Agency Web Profesional</h4>
+                        <p>Membangun website klien menggunakan WordPress dan custom development. Belajar best practices dalam pengembangan web profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        EDUCATION SECTION
+    ========================================= -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Pendidikan</span>
+                <h2 class="section-title">Latar Belakang Akademik</h2>
+                <p class="section-description">Pendidikan formal dan sertifikasi profesional yang mendukung karir saya.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2015 - 2019</span>
+                        <h3>S1 Teknik Informatika</h3>
+                        <h4>Universitas Nurul jadid</h4>
+                        <p>Lulus dengan predikat Cum Laude. Fokus pada mata kuliah pemrograman, basis data, dan rekayasa perangkat lunak. Aktif dalam komunitas teknologi kampus.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021</span>
+                        <h3>AWS Certified Developer</h3>
+                        <h4>Amazon Web Services</h4>
+                        <p>Sertifikasi profesional dalam pengembangan dan deployment aplikasi di platform AWS cloud computing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020</span>
+                        <h3>Meta Front-End Developer</h3>
+                        <h4>Meta (Coursera)</h4>
+                        <p>Sertifikasi profesional dalam React.js dan pengembangan frontend modern dari Meta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        TESTIMONIALS SECTION
+    ========================================= -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Testimoni</span>
+                <h2 class="section-title">Apa Kata Klien</h2>
+                <p class="section-description">Feedback dari klien dan kolega yang telah bekerja sama dengan saya.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <p>"Mohammad Watsiq Billah adalah developer yang sangat profesional. Dia tidak hanya menyelesaikan proyek tepat waktu, tetapi juga memberikan solusi yang jauh melampaui ekspektasi kami. Sangat direkomendasikan!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BS</div>
+                        <div class="testimonial-info">
+                            <h4>Budi Santoso</h4>
+                            <span>CEO, PT Maju Bersama</span>
+                            
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <p>"Kerjasama dengan sangat menyenangkan. Dia memahami kebutuhan kami dengan baik dan menghasilkan website yang sangat memukau. Komunikasi yang sangat baik sepanjang proyek."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AR</div>
+                        <div class="testimonial-info">
+                            <h4>Ratna Dewi</h4>
+                            <span>Marketing Director, Brand Kreatif</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <p>"Kode yang dihasilkan sangat bersih dan terstruktur. Maintenance menjadi jauh lebih mudah. Saya sangat terkesan dengan dedikasi dan kualitas kerjanya."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DP</div>
+                        <div class="testimonial-info">
+                            <h4>Dimas Permadi</h4>
+                            <span>CTO, Startup Technology</span>
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+        CONTACT SECTION
+    ========================================= -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Kontak</span>
+                <h2 class="section-title">Mari Bekerja Sama</h2>
+                <p class="section-description">Punya proyek menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Hubungi Saya</h3>
+                    <p>Saya selalu terbuka untuk diskusi tentang proyek baru, peluang kerja sama, atau sekadar ngobrol soal teknologi.</p>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <h4>Lokasi</h4>
+                            <p>situbondo, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <p>mohammadwatsiqbillah@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                        <div class="contact-item-text">
+                            <h4>Telepon</h4>
+                            <p>+62 83825487826</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email *</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek *</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subjek pesan Anda" required>
+                            <div class="error-message" id="subjectError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Anda *</label>
+                            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+            FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-code"></i>Abil.dev</h3>
+                <p>Mengubah ide menjadi pengalaman digital yang luar biasa. Mari berkolaborasi untuk menciptakan sesuatu yang istimewa.</p>
+            </div>
+            <div class="footer-links-section">
+                <h4>Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#portfolio">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-section">
+                <h4>Layanan</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Konsultasi IT</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter-section">
+                <h4>Newsletter</h4>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; margin-bottom: 1rem;">Dapatkan update terbaru seputar teknologi dan proyek saya.</p>
+                <form class="footer-newsletter" id="newsletterForm">
+                    <input type="email" placeholder="Masukkan email Anda" required>
+                    <button type="submit">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mohammad Watsiq Billah. Semua Hak Dilindungi.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================
+        BACK TO TOP BUTTON
+    ========================================= -->
+    <div class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+
+</body>
+</html>
